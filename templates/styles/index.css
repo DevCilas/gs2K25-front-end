@@ -7,13 +7,54 @@
 header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/pessoas-que-se-reunem-num-grupo-de-apoio.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(../images/charmosa-casa-amarela-com-janelas-de-madeira-e-jardim-gramado-verde.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-nav > a{
+nav{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 10vw;
+    background-color: rgba(0, 0, 0, 0.096);
+    
+}
+nav > h1{
+    margin-right: auto;
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.links{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.links > a{
     color: white;
     text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.textos_header{
+    padding: 0 15vw;
+    margin-top: 30vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h1{
+        font-size: 4rem;
+        margin-bottom: 5vh;
+    }
+    p{
+        width: 70%;
+        margin: 6rem auto;
 
+    } 
+}
+.abrigos{
+    width: 100%;
+    height: 100vh;
 }
