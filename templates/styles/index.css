@@ -1,4 +1,4 @@
-/* ---- GERAL E VARIÁVEIS ---- */
+
 :root {
     --primary-color: #f5ad00;
     --secondary-color: #333;
@@ -25,7 +25,7 @@ body {
     color: var(--text-color);
 }
 
-/* ---- CABEÇALHO E NAVEGAÇÃO (MOBILE FIRST) ---- */
+
 .header {
     background-color: var(--header-bg);
     padding: 1rem 5%;
@@ -129,7 +129,7 @@ main {
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s; /* Requisito: Micro-interação */
+    transition: background-color 0.3s; 
 }
 
 .cta-button:hover {
@@ -158,10 +158,10 @@ main {
     border-radius: 8px;
 }
 
-/* ---- REQUISITO: CSS GRID LAYOUT ---- */
+
 .features-grid {
     display: grid;
-    grid-template-columns: 1fr; /* 1 coluna em mobile */
+    grid-template-columns: 1fr; 
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -171,7 +171,7 @@ main {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    transition: transform 0.3s, box-shadow 0.3s; /* Requisito: Micro-interação */
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .feature-card:hover {
@@ -183,10 +183,10 @@ main {
     margin-bottom: 0.5rem;
 }
 
-/* ---- VÍDEO ---- */
+
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* Proporção 16:9 */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -202,7 +202,7 @@ main {
     height: 100%;
 }
 
-/* ---- RODAPÉ ---- */
+
 .footer {
     background-color: var(--secondary-color);
     color: var(--light-text-color);
@@ -210,7 +210,7 @@ main {
     padding: 2rem 0;
 }
 
-/* ---- ANIMAÇÃO DE FADE-IN COM SCROLL ---- */
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -223,10 +223,9 @@ main {
 }
 
 
-/* ---- RESPONSIVIDADE (TABLET E DESKTOP) ---- */
 @media (min-width: 768px) {
     .hamburger {
-        display: none; /* Esconde o hamburguer em telas maiores */
+        display: none; 
     }
 
     .nav-menu {
@@ -246,7 +245,7 @@ main {
         font-size: 1rem;
     }
 
-    /* Requisito: CSS Grid Layout com 3 colunas em telas maiores */
+
     .features-grid {
         grid-template-columns: repeat(3, 1fr);
     }
