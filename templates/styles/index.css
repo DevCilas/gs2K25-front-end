@@ -1,4 +1,6 @@
-
+/* 
+ * Variáveis globais de cores e estilos
+ */
 :root {
     --primary-color: #f5ad00;
     --secondary-color: #333;
@@ -18,6 +20,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Estilos base do corpo do documento */
 body {
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.6;
@@ -25,7 +28,7 @@ body {
     color: var(--text-color);
 }
 
-
+/* Estilo do cabeçalho fixo */
 .header {
     background-color: var(--header-bg);
     padding: 1rem 5%;
@@ -39,13 +42,13 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Logo no cabeçalho */
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
     text-decoration: none;
 }
-
 
 .nav-menu {
     display: flex;
@@ -59,7 +62,6 @@ body {
     height: 100vh;
     transition: left 0.3s ease-in-out; 
 }
-
 
 .nav-menu.active {
     left: 0;
@@ -81,7 +83,6 @@ body {
     color: var(--primary-color);
 }
 
-
 .hamburger {
     display: block;
     cursor: pointer;
@@ -95,7 +96,6 @@ body {
     background-color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
 }
-
 
 main {
     padding-top: 60px; 
@@ -112,6 +112,7 @@ main {
     padding: 0 5%;
 }
 
+/* Estilos para o conteúdo da seção hero */
 .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
@@ -122,6 +123,7 @@ main {
     margin-bottom: 2rem;
 }
 
+/* Estilo do botão de chamada para ação */
 .cta-button {
     background-color: var(--primary-color);
     color: var(--light-text-color);
@@ -136,6 +138,7 @@ main {
     background-color: #0056b3;
 }
 
+/* Estilo base para seções de conteúdo */
 .content-section {
     padding: 4rem 5%;
     text-align: center;
@@ -146,11 +149,13 @@ main {
     margin-bottom: 1rem;
     color: var(--primary-color);
 }
-.content-section h3{
+
+.content-section h3 {
     font-weight: 400;
     margin-bottom: 5vh;
 }
 
+/* Estilo para imagens dentro das seções de conteúdo */
 .content-image {
     max-width: 100%;
     height: auto;
@@ -158,7 +163,7 @@ main {
     border-radius: 8px;
 }
 
-
+/* Grid de recursos/características */
 .features-grid {
     display: grid;
     grid-template-columns: 1fr; 
@@ -166,6 +171,7 @@ main {
     margin-top: 2rem;
 }
 
+/* Cards de características */
 .feature-card {
     background: #fff;
     padding: 2rem;
@@ -183,10 +189,10 @@ main {
     margin-bottom: 0.5rem;
 }
 
-
+/* Container responsivo para vídeos */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; 
+    padding-bottom: 56.25%; /* Proporção 16:9 */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -202,7 +208,7 @@ main {
     height: 100%;
 }
 
-
+/* Rodapé do site */
 .footer {
     background-color: var(--secondary-color);
     color: var(--light-text-color);
@@ -210,7 +216,7 @@ main {
     padding: 2rem 0;
 }
 
-
+/* Efeito de fade-in para elementos */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -221,7 +227,6 @@ main {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 @media (min-width: 768px) {
     .hamburger {
@@ -244,7 +249,6 @@ main {
     .nav-link {
         font-size: 1rem;
     }
-
 
     .features-grid {
         grid-template-columns: repeat(3, 1fr);
